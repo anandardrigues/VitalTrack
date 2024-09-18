@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --brand: #24eb0a;
+  --primary-color: #092032;
+  --body: #516171;
+  --text-dark: #0a0a0a;
+  --text-light: #737373;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  --max-width: 1200px;
+  --header-font: "Oswald", "sans-serif";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  color: #516171;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700 !important;
+}
+
+img {
+  width: 100%;
+}
+
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+a {
+  color: var(--text-dark);
+  transition: all 0.4s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+/*NAV BAR*/
+
+.custom-bg {
+  background-color: #eff3f1;
+}
+.navbar {
+  box-shadow: var(--shadow);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--brand);
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar-brand .dot {
+  color: var(--brand);
+}
+
+.navbar-brand span {
+  color: var(--brand);
+}
+
+.btn {
+  padding: 8px 26px;
+}
+
+.btn-brand {
+  border-color: var(--brand);
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.btn-brand:hover {
+  color: #fff;
+  background-color: #ec2700;
+}
+
+/* slider */
+.slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider-wrapper {
+  position: relative; /* Permite posicionar o conteúdo */
+}
+/*.slide1 {
+  background-image: url('caminho-da-sua-imagem.jpg');
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  position: relative; 
+  z-index: 1; 
+} */
+
+.slide1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Sobreposição escura para melhorar a legibilidade do texto */
+  z-index: 0; /* Mantém o overlay atrás do texto */
+}
+
+h1,
+h6,
+.btn {
+  position: relative;
+  z-index: 2; /* Garante que o texto e os botões fiquem acima da sobreposição */
+  color: white; /* Deixa o texto branco para contraste com a imagem */
+}
+
+.btn-brand {
+  background-color: var(--brand); /* Botão personalizado */
+  color: #fff;
+}
+
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* navbar */
+.top-nav {
+  background-color: var(--brand);
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* slide */
+.slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/exercice.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/CrossFit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/runner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide4{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../images/lift\ weight.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+
+
+.slide5{
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url(../images/lift\ weight.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+/*.slide2 h1 {
+  padding-top: 10px !important;
+  padding-bottom: 70px !important;
+  align-items: flex-start; /* Alinha o conteúdo no topo */
+
+/* .slide2 .col-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha o conteúdo no topo, caso deseje  justify-content: center; /* Alinha o conteúdo verticalmente no centro */
+
+/* .slide .display-3 {
+ text-transform: uppercase;
+ color: #fff;
+}*/
+
+/* owl carrosel*/
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+    background-color: rgba(173, 164, 164, 0.062) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    display: grid;
+    place-items: center;
+    color: #fff !important;
+    border-radius: 100px;
+    line-height: 0;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50%;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+    background-color: var(--brand) !important; 
+}
+
+.owl-dot.active span{
+    background-color: var(--brand) !important;
+}
+
+
+/* search bar*/
+
+.search-section {
+  padding: 40px 0; /* Espaçamento vertical ao redor da seção */
+  background-color: #f8f9fa; /* Cor de fundo opcional */
+}
+
+.search-section h1 {
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  color: #333; /* Cor do texto, ajuste conforme o design */
+}
+
+.search-section .form-control {
+  border-radius: 50px; /* Bordas arredondadas para o campo de pesquisa */
+}
+
+.search-section .btn {
+  border-radius: 50px; /* Bordas arredondadas para o botão */
+}
+
+/*PROGRAMAS*/
+
+#programas .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#programas .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+#programas .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#programas .card-text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body a {
+  display: inline-block;
+  margin-top: 10px; /* Ajuste conforme necessário */
+  color: #007bff; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Ajuste o peso da fonte */
+}
+
+.card-body a i {
+  margin-left: 5px; /* Espaço entre o texto e o ícone */
+}
+
+.card-body a {
+  display: block; /* Faz o link ocupar toda a largura disponível */
+  text-align: center; /* Centraliza o texto e o ícone */
+  color: #12bb29; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+/*BOOK A CLASS*/
+
+#agendamento {
+  background-color: #f8f9fa;
+}
+
+#agendamento .btn-primary {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+
