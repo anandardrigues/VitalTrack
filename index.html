@@ -71,7 +71,7 @@
           </ul>
           <a
             href="#"
-            class="btn btn-brand ms-lg-3"
+            class="btn btn-brand ms-lg-3" 
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             >Contato</a
@@ -308,6 +308,153 @@
       </div>
     </section>
 
+    <!--about us-->
+
+    <section class="section_container join_container">
+      <h2 class="section_header">Quem Somos?</h2>
+      <p class="subheader d-flex justify-content-center">
+        Na Vital Track, saúde, bem-estar e desempenho se encontram para transformar vidas. Nosso propósito vai além dos treinos — é sobre uma jornada de evolução contínua. Com uma equipe de treinadores dedicados e um ambiente acolhedor, criamos mais do que um espaço de exercícios: somos uma comunidade unida pelo apoio e pelo progresso mútuo.
+        <br><br>
+        Desde iniciantes até atletas experientes, aqui, cada passo é comemorado. Nós fornecemos ferramentas, suporte e motivação para que você alcance suas metas e supere seus limites. Na Vital Track, sua transformação é nosso maior triunfo.
+        <br><br>
+        Venha fazer parte dessa jornada e descubra como o seu bem-estar pode se tornar o centro de uma vida vibrante e saudável.
+      </p>
+
+      <h3 class="section_subheader">Conte Conosco!</h3>
+      <div class="join_grid">
+        <div class="join_card">
+          <span><box-icon type='solid' name='user-voice'></box-icon></span>
+          <div class="join_card_content">
+            <h4>Personal Trainer</h4>
+            <p>Treinos personalizados e suporte profissional para otimizar seu desempenho.</p>
+          </div>
+        </div>
+        <div class="join_card">
+          <span><box-icon name='food-menu'></box-icon></span>
+          <div class="join_card_content">
+            <h4>Nutricionista</h4>
+            <p>Planos alimentares específicos para potencializar seus resultados.</p>
+          </div>
+        </div>
+        <div class="join_card">
+          <span><box-icon name='health'></box-icon></span>
+          <div class="join_card_content">
+            <h4>Suporte Psicológico</h4>
+            <p>Apoio emocional para manter o equilíbrio e a motivação no seu caminho fitness.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PLANOS-->
+
+    <section class="section_container plans_container">
+      <h2 class="section_header">Nossos Planos</h2>
+      <div class="plans-grid">
+        <!-- Plano Básico -->
+        <div class="plan-card basic">
+          <h3 class="plan-title">Plano Básico</h3>
+          <p class="plan-price">R$ 99/mês</p>
+          <ul class="plan-features">
+            <li>Acesso ilimitado à academia</li>
+            <li>1 avaliação física por semestre</li>
+            <li>Suporte básico de personal trainer</li>
+          </ul>
+          <a href="#" class="btn btn-plan">Assinar agora</a>
+        </div>
+    
+        <!-- Plano Padrão -->
+        <div class="plan-card standard">
+          <h3 class="plan-title">Plano Padrão</h3>
+          <p class="plan-price">R$ 149/mês</p>
+          <ul class="plan-features">
+            <li>Acesso ilimitado à academia e aulas</li>
+            <li>2 avaliações físicas por semestre</li>
+            <li>Suporte completo de personal trainer</li>
+            <li>Plano de nutrição personalizado</li>
+          </ul>
+          <a href="#" class="btn btn-plan">Assinar agora</a>
+        </div>
+    
+        <!-- Plano Premium -->
+        <div class="plan-card premium">
+          <h3 class="plan-title">Plano Premium</h3>
+          <p class="plan-price">R$ 199/mês</p>
+          <ul class="plan-features">
+            <li>Acesso total à academia e aulas exclusivas</li>
+            <li>Avaliação física mensal</li>
+            <li>Treinamento personalizado avançado</li>
+            <li>Consultoria nutricional e psicológica</li>
+            <li>Acesso a eventos VIP</li>
+          </ul>
+          <a href="#" class="btn btn-plan">Assinar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 AND. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+              <div class="modal-body p-0">
+                  <div class="container-fluid">
+                      <div class="row gy-4">
+                          <div class="col-lg-4 col-sm-12 bg-cover"
+                              style="background-image: url(./assets/images/jonathan-borba-R0y_bEUjiOM-unsplash.jpg); min-height:300px;">
+                              <div>
+                                  
+                              </div>
+                          </div>
+                          <div class="col-lg-8">
+                              <form class="p-lg-5 col-12 row g-3">
+                                  <div>
+                                      <h1>Entre em contato</h1>
+                                  <p>Fique à vontade para nos contatar e retornaremos o mais rápido possível.</p>
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <label for="userName" class="form-label">Primeiro Nome</label>
+                                      <input type="text" class="form-control" placeholder="Jon" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-lg-6">
+                                      <label for="userName" class="form-label">Sobrenome</label>
+                                      <input type="text" class="form-control" placeholder="Doe" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="userName" class="form-label">Email </label>
+                                      <input type="email" class="form-control" placeholder="Johndoe@example.com" id="userName"
+                                          aria-describedby="emailHelp">
+                                  </div>
+                                  <div class="col-12">
+                                      <label for="exampleInputEmail1" class="form-label">Mensagem</label>
+                                      <textarea name="" placeholder="Escreva sua dúvida ou solicitação..." class="form-control" id=""  rows="4"></textarea>
+                                  </div>
+
+                                  <div class="col-12">
+                                      <button type="submit" class="btn btn-brand">Enviar Mensagem </button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+    
+    
+    
+    
+    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
